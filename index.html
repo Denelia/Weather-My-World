@@ -35,16 +35,17 @@
       <main>
         <div class="weather-details">
           <div class="data-box">
-            <h1 id="city" class="place">Paris</h1>
+            <h1 id="city" class="place"></h1>
             <p class="details">
-              Tuesday 14:49, scattered showers
+              <span id="time"> </span> <span id="description"> </span>
               <br />
-              Humidity :<strong> 66%</strong> Wind :<strong> 3.3km/h</strong>
+              Humidity : <strong id="humidity"></strong> Wind :
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="temperature-box">
-            <div class="icon">🌤️</div>
-            <div id="temperature" class="temperature">12</div>
+            <div id="icon"></div>
+            <div id="temperature" class="temperature"></div>
             <div class="unit">°c</div>
           </div>
         </div>
