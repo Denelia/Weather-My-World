@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Weather My World</title>
   </head>
   <body>
@@ -34,7 +35,7 @@
       <main>
         <div class="weather-details">
           <div class="data-box">
-            <h1 id="current-city" class="place">Paris</h1>
+            <h1 id="city" class="place">Paris</h1>
             <p class="details">
               Tuesday 14:49, scattered showers
               <br />
@@ -43,7 +44,7 @@
           </div>
           <div class="temperature-box">
             <div class="icon">🌤️</div>
-            <div class="temperature">12</div>
+            <div id="temperature" class="temperature">12</div>
             <div class="unit">°c</div>
           </div>
         </div>
