@@ -41,17 +41,37 @@ a {
   padding: 15px;
   margin-left: 5px;
 }
-.weather-details {
+.weather-forecast {
   display: flex;
-  justify-content: space-between;
+  margin: 20px 15px;
 }
-
-.data-box {
-  display: block;
-}
-
 .temperature-box {
   display: flex;
+}
+
+.weather-details {
+  display: flex;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: #34857f;
+  font-size: 16px;
+  line-height: 20px;
+}
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #5a082d;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.weather-forecast-temperature {
+  padding: 0 10px;
 }
 
 .place {
