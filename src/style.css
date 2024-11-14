@@ -41,16 +41,17 @@ a {
   padding: 15px;
   margin-left: 5px;
 }
-.weather-forecast {
-  display: flex;
-  margin: 20px 15px;
-}
+
 .temperature-box {
   display: flex;
 }
-
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+}
 .weather-details {
   display: flex;
+  justify-content: space-between;
 }
 
 .weather-forecast-date {
@@ -60,14 +61,12 @@ a {
   line-height: 20px;
 }
 .weather-forecast-icon {
-  font-size: 38px;
   text-align: center;
+  font-size: 38px;
 }
 .weather-forecast-temperatures {
-  text-align: center;
-  color: #5a082d;
   display: flex;
-  justify-content: center;
+  color: #5a082d;
   margin-top: 10px;
 }
 .weather-forecast-temperature {
