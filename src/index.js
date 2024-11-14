@@ -21,7 +21,7 @@ function refreshWeather(response) {
 
 function searchCity(city) {
   let apiKey = "ba30d32cb59f4of366560at60dd0fa87";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(refreshWeather);
 }
 
@@ -30,7 +30,14 @@ function search(event) {
   let searchInput = document.querySelector("#search-input");
   searchCity(searchInput.value);
 }
-function displayForecast() {
+
+function getForecast(city) {
+  let apiKey = "ba30d32cb59f4of366560at60dd0fa87";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
   days.forEach(function (day) {
@@ -78,3 +85,4 @@ searchEngineElement.addEventListener("submit", search);
 
 searchCity("Durban");
 displayForecast();
+getForecast(response.data.city);
